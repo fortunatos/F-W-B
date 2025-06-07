@@ -1,74 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-	
- <head>
- 
-<title>FWB</title> 
-	 
-<!-- twitter card details -->
-<meta content='summary_large_image' name='twitter:card'/>
-<meta content='@MarySelfiee' name='twitter:site'/>
-<meta content='https://F-W-B.online/' name='twitter:url'/>
-<meta content='My spicy page is on free right now!!' name='twitter:title'/>
-<meta content='@' name='twitter:description'/>
-<meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe8FO-jjYmkb7DBh-_1N7_u74ZygssJUGnSiper1P2e9VdgQdBL9OwAfTGepRu6Ieu8xibusjPqXohkqXNYTEVp5h84y313Dl0wfC2o6EUCIo0VLkLvpgypqP6_QJ08A2M8q4r5BBWDJ_pX9l34f3T_n95kZ4yT3tPtd7Xv-6wJHTNSrVEh4eaRnzQWATD/s320/Screenshot_20231013_143519_X.jpg' name='twitter:image'/>
-<!-- end twitter card details --> 
-	 
-<script type='text/javascript'>
-	
-var RTR = window.location.href; 
-RTR = RTR.substring( 22, 100 );
-var RTR2 = RTR.replace(/[^a-zA-Zs0-9]/g, '-');
-document.title = 'FWB: ' + RTR2 + ' IDX';
- 
-</script>
-
- 
- <!-- Google tag (gtag.js) -->
-<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-4RK11EWEJE'></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4RK11EWEJE');
-</script> 
-
-
-<meta content='width=device-width, initial-scale=1.0, user-scalable=0' name='viewport'/> 
-<link href="https://maturelovers.club/alecia/378f0dd4826e490864d2573ce6719e6e.static.css" rel="stylesheet"/>
-<meta content="#ffffff" name="msapplication-TileColor"/>
-<meta content="https://maturelovers.club/alecia/theme/australianlocals/images/favicon/ms-icon-144x144.png" name="msapplication-TileImage"/>
-
-
-       <style>
-        .background-image{
-            position:fixed;
-            top:0px;
-            left:0px;
-            width:100%;
-            height:100%;
-            background: url('https://maturelovers.club/alecia/in_css_7b82a3f147c0b6b1b41b141976336713.static.jpg') no-repeat center top fixed;
-            animation:zoomin-out 4s infinite;
-            -webkit-animation:zoomin-out 4s infinite;
-        }
-      
-    </style>  
-  
+<head>
+  <meta charset="UTF-8">
+  <title>FinderSingles.site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: url('https://maturelovers.club/alecia/in_css_7b82a3f147c0b6b1b41b141976336713.static.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      backdrop-filter: blur(4px);
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 20px;
+      padding: 30px 25px;
+      text-align: center;
+      max-width: 350px;
+      box-shadow: 0 0 10px rgba(255, 65, 108, 0.5);
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #ff416c;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .btn {
+      background: #ff416c;
+      color: white;
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      margin-top: 20px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #ff2a5c;
+    }
+    .city, .counter {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
 </head>
-
 <body>
-<div class="background-image"></div>
-<div class="website-container">
 
-<div class="step step_0" style="display: block;">
-<div class="step-title">
-                Are you ready to come in contact with mature woman wanting discreet encounters?
-            </div>
-<a href="https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=FWB"><span class="btn-primary">Yes, let me in!</span></a>
-<div style="clear:both"></div>
-</div>
-</script>
+  <div class="card">
+    <h1>Hook Up in 5 Minutes</h1>
+    <p>No account, no hassle. Just real people near <span id="user-city">you</span>.</p>
+    
+    <div class="counter">
+      🔥 <span id="online-count">97</span> users online now
+    </div>
+
+    <a class="btn" href="https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=FinderSingles" target="_blank">
+      ❤ Like
+    </a>
+
+    <div class="city" id="city-info">Searching your area...</div>
+  </div>
+
+  <script>
+    // Simular contador com pessoas entrando/saindo
+    let count = 97;
+    const el = document.getElementById("online-count");
+    setInterval(() => {
+      const change = Math.random() < 0.5 ? -1 : 1;
+      count = Math.max(87, Math.min(114, count + change));
+      el.textContent = count;
+    }, 3000);
+
+    // Geolocalização fake com cidade do usuário
+    fetch('https://ipapi.co/json/')
+      .then(res => res.json())
+      .then(data => {
+        const city = data.city;
+        document.getElementById("user-city").textContent = city;
+        document.getElementById("city-info").textContent = `MILFs in ${city} are waiting...`;
+      })
+      .catch(() => {
+        document.getElementById("city-info").textContent = "Local singles near you";
+      });
+  </script>
+
 </body>
 </html>
